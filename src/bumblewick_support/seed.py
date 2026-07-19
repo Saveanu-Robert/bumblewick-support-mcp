@@ -41,6 +41,8 @@ REFUND_POLICY = """\
 Bumblewick & Co. — Refund Policy (support desk)
 
 - Only SHIPPED or DELIVERED orders are eligible for a refund.
+- Shipped or delivered orders can be refunded within 30 days.
+- Cancelled orders are refunded automatically at cancellation.
 - Never refund more than the order total minus any refunds already issued.
 - Refunds at or under the auto-approve limit may be issued directly.
 - Larger refunds require explicit human confirmation (confirm=true).

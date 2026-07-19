@@ -10,8 +10,10 @@ from __future__ import annotations
 import logging
 import os
 import sys
+from typing import Annotated
 
 from mcp.server.fastmcp import FastMCP
+from pydantic import Field
 
 from .config import get_settings
 from .seed import REFUND_POLICY, seed
@@ -73,7 +75,7 @@ def search_help(query: str) -> dict:
 @mcp.tool()
 def create_refund(
     order_id: str,
-    amount_cents: int,
+    amount_cents: Annotated[int, Field(gt=0, description="Refund amount in integer cents (positive).")],
     reason: str,
     confirm: bool = False,
     idempotency_key: str | None = None,
