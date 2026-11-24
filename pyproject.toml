@@ -17,6 +17,10 @@ dev = ["pytest>=8", "pytest-asyncio>=0.23"]
 [project.scripts]
 bumblewick-support-mcp = "bumblewick_support.server:main"
 
+[project.urls]
+Repository = "https://github.com/Saveanu-Robert/bumblewick-support-mcp"
+Issues = "https://github.com/Saveanu-Robert/bumblewick-support-mcp/issues"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"

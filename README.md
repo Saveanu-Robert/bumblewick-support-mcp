@@ -1,5 +1,9 @@
 # Bumblewick Support-Desk MCP Server 🕯️
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?logo=python&logoColor=white)
+[![MCP](https://img.shields.io/badge/Model_Context_Protocol-server-6E56CF.svg)](https://modelcontextprotocol.io)
+
 The example project for the **"Give the Robot Hands"** series — a small, safe,
 well-tested [Model Context Protocol](https://modelcontextprotocol.io) server for
 a fictional online candle shop, **Bumblewick & Co.**
@@ -45,6 +49,10 @@ dangerous action fenced in by server-side rules. No real people, no real money.
 ## Quick start
 
 ```bash
+# 0. Clone
+git clone https://github.com/Saveanu-Robert/bumblewick-support-mcp.git
+cd bumblewick-support-mcp
+
 # 1. Install (any of: pip, uv, poetry)
 pip install -e ".[dev]"
 
@@ -111,4 +119,4 @@ layer.** `server.py` only wires things up; everything worth testing lives in
 
 ## License
 
-MIT.
+Released under the [MIT License](LICENSE).
